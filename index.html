@@ -1,6 +1,10 @@
 <html>
   <head>
+    
     <title>Please Buy Less</title>
+    <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <style>
       @import url('https://rsms.me/inter/inter.css');
 
@@ -19,46 +23,110 @@
       .bold {
         font-weight: bold;
       }
-
-      #msg {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100vw;
-        height: 100vh;
-        white-space: pre-wrap;
+      
+      
+     container {
+		width:996px;
+		margin:0px auto;
+		font-size:1em;
+	}
+	section,aside {
+		padding: 10px;
+		background:#ccc;
+		-moz-border-radius:5px;-webkit-border-radius:5px;-o-border-radius:5px;border-radius:5px;
+	}
+	section {
+		float: left;
+		width: 70%;
+	}
+	aside {
+		float: right;
+		width: 25%;
+	}
+	nav {
+		overflow: hidden;
+	}
+	nav ul {
+		list-style-type:none;
+		float:left;
+		padding:0px;
+	}
+	nav ul li {
+		float:left;
+		padding:3px 10px;
+		margin:2px;
+		background:#ccccff;
+		-moz-border-radius:5px;-webkit-border-radius:5px;-o-border-radius:5px;border-radius:5px;
+	}
+      .center {
+        text-align: center;
+        list-style-position: inside;
       }
       
-      #msg2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100vw;
-        height: 100vh;
-        white-space: pre-wrap;
-      }
+      
+      /*Responsive*/
+      
+      /* para 980px o menos */
+	@media screen and (max-width:980px) {
+		.container {
+			width:98%;
+		}
+		section {
+			width:68%;
+		}
+	}
+
+	/* para 700px  or less*/
+	@media screen and (max-width:700px) {
+		
+		nav, section {
+			font-size:1.2em;
+		}
+		
+		nav ul {
+			float:none;
+			clear:both;
+		}
+	}
+
+	/* For 480px or less */
+	@media screen and (max-width:480px) {
+		
+		nav, section {
+			font-size:1.5em;
+		}
+		section {
+			width:94%;
+		}
+		nav ul {
+			float:left;
+			clear:none;
+			width:50%;
+		}
+		nav ul li {
+			float:none;
+		}
     </style>
   </head>
   <body>
     <div id='msg'>
       <img src='noblackfriday.png' title='Please Buy Less' style='width: 30%'>
       
-      <b> Language English</b>
-         
-        Every year this country celebrates Thanksgiving and then goes out to splurge on Black Friday.
-        Every year companies use all types of tricks to ring in more dollars.
-        Every year consumers buy more clothes, more TVs, more crap than the previous year.
-        The wheels of capitalism keep turning with no regard for the environment.
-
-        Climate change is real and consumers have huge environmental impact.
-        We like to blame the government or industries for the Earth's problems, but in reality it is all derived from consumption.
-        Most goods are not biodegradable and inevitably end up in landfills.
-
-        Reduce -> Reuse -> Recycle
-        While the first instinct with waste is to recycle, it is better to reuse and best to reduce. 
+      <b>Language English</b>
       
+         <ul align=class="center>
+            <li>Every year this country celebrates Thanksgiving and then goes out to splurge on Black Friday.</li>
+            <li>Every year companies use all types of tricks to ring in more dollars.</li>
+            <li>Every year consumers buy more clothes, more TVs, more crap than the previous year.</li>
+            <li>  The wheels of capitalism keep turning with no regard for the environment./li>
+             <li>Climate change is real and consumers have huge environmental impact <li>
+            <li> We like to blame the government or industries for the Earth's problems, but in reality it is all derived from consumption.<li>
+            <li>   Most goods are not biodegradable and inevitably end up in landfills.<li>
+            <li>   While the first instinct with waste is to recycle, it is better to reuse and best to reduce.</li>  
+         </ul>
+  
+     
+        <span class="bold">  Reduce -> Reuse -> Recycle</span>
         <span class="bold">This black friday - Please Buy Less :)</span>
     </div>
     
