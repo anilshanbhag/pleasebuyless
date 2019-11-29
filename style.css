@@ -23,3 +23,7 @@ body {
 	height: 100vh;
 	white-space: pre-wrap;
 }
+
+.small-img  {
+	width: 30%
+}
